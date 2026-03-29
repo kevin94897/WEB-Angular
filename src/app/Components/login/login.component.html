@@ -8,10 +8,10 @@
       </div>
       <form [formGroup]="loginForm" (submit)="onSubmit()">
           <mat-form-field class="example">
-            <input matInput placeholder="Correo Electrónico" value="">
+            <input matInput placeholder="Correo Electrónico" formControlName="email" autocomplete="email">
           </mat-form-field>
           <mat-form-field class="example" id="pass">
-            <input matInput placeholder="Contraseña" value="" type="password">
+            <input matInput placeholder="Contraseña" formControlName="password" type="password" autocomplete="current-password">
           </mat-form-field>
           <button mat-flat-button type="submit">INGRESAR</button>
         </form>
